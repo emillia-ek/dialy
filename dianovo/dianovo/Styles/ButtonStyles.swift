@@ -13,14 +13,14 @@ struct CheckboxStyle: ToggleStyle {
             Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
                 .resizable()
                 .frame(width: 20, height: 20)
-                .foregroundColor(configuration.isOn ? .blue : .gray)
+                .foregroundColor(configuration.isOn ? .gray : .gray)
                 .onTapGesture {
                     configuration.isOn.toggle()
                 }
             
             configuration.label
                 .font(.system(size: 14))
-                .foregroundColor(.primary)
+                .foregroundColor(.gray)
         }
     }
 }
