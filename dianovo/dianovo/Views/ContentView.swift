@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  dianovo
-//
-//  Created by Emilia Kościelniak on 21/10/2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,17 +5,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Dianovo")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                    .padding(.bottom, 10)
+            VStack(alignment: .center, spacing: 20) {
+                Spacer()
+
+                Image("dianovo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 300)
+                
                 Text("Asystent w cukrzycy typu 1 oparty na uczeniu maszynowym")
                     .font(.title3)
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.horizontal, 30)
+                
+                Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
@@ -36,15 +36,9 @@ struct ContentView: View {
             .onTapGesture {
                 navigate = true
             }
-            .navigationDestination(isPresented: $navigate)
-            {
+            .navigationDestination(isPresented: $navigate) {
                 LogInView().navigationBarBackButtonHidden()
             }
         }
     }
-}
-
-
-#Preview {
-    ContentView()
 }
