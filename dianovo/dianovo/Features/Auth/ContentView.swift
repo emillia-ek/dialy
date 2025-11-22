@@ -5,7 +5,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(alignment: .center, spacing: 20) {
+            VStack(alignment: .center, spacing: -20) {
                 Spacer()
 
                 Image("dianovo")
@@ -37,8 +37,12 @@ struct ContentView: View {
                 navigate = true
             }
             .navigationDestination(isPresented: $navigate) {
-                LogInView().navigationBarBackButtonHidden()
+                SignInView().navigationBarBackButtonHidden()
             }
         }
     }
+}
+
+#Preview{
+    ContentView()
 }
