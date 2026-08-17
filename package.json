@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "turbo": "^2.10.10"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=web",
+    "dev:mobile": "turbo run dev --filter=mobile",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  }
+}
