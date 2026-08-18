@@ -12,3 +12,6 @@ minimumReleaseAgeExclude:
   - expo-asset@57.0.12
   - expo-constants@57.0.12
   - expo@57.0.14
+  - expo-dev-client@57.0.13
+  - expo-dev-launcher@57.0.13
+  - expo-dev-menu@57.0.13
