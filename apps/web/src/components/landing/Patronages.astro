@@ -1,0 +1,34 @@
+---
+const patronages = [
+	{
+		name: 'JP Morgan Chase',
+		description: 'Otrzymaliśmy mentoring od specjalistów z JP Morgan Chase.',
+	},
+	{
+		name: 'Fundacja „Rozkwit Skrzydeł”',
+		description:
+			'Projekt DiaNovo znalazł się pod opieką Fundacji „Rozkwit Skrzydeł”.',
+	},
+];
+---
+
+<section class="patronages">
+	<div class="wrap">
+		<div class="patronages-head reveal">
+			<span class="eyebrow">Wspierają nas</span>
+			<h2>Nasze patronaty</h2>
+		</div>
+		<div class="patronages-list reveal">
+			{
+				patronages.map(({ name, description }) => (
+					<article class="patronage-card">
+						<>
+							<h3>{name}</h3>
+							<p>{description}</p>
+						</>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

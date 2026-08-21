@@ -670,6 +670,39 @@ button:focus-visible {
 .faq {
 	padding: 130px 0;
 }
+.patronages {
+	padding: 100px 0;
+	background: var(--white);
+	border-bottom: 1px solid var(--line);
+}
+.patronages-head {
+	text-align: center;
+	margin-bottom: 42px;
+}
+.patronages-head h2 {
+	font-size: clamp(30px, 3.8vw, 46px);
+	margin-top: 16px;
+}
+.patronages-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	max-width: 820px;
+	margin: 0 auto;
+	border: 1px solid var(--line);
+}
+.patronage-card {
+	padding: 34px 38px;
+}
+.patronage-card + .patronage-card {
+	border-left: 1px solid var(--line);
+}
+.patronage-card h3 {
+	font-size: 25px;
+	margin-bottom: 12px;
+}
+.patronage-card p {
+	line-height: 1.7;
+}
 .faq-head {
 	max-width: 600px;
 	margin: 0 auto 48px;
@@ -706,5 +739,12 @@ button:focus-visible {
 @media (max-width: 820px) {
 	.audience-row {
 		grid-template-columns: 1fr;
+	}
+	.patronages-list {
+		grid-template-columns: 1fr;
+	}
+	.patronage-card + .patronage-card {
+		border-top: 1px solid var(--line);
+		border-left: 0;
 	}
 }
