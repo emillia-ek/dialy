@@ -37,7 +37,7 @@ tabs.forEach((tab) =>
 
 const banner = document.querySelector<HTMLElement>('#cookieBanner');
 window.setTimeout(() => banner?.classList.add('show'), 900);
-['cookieAccept', 'cookiePrefs'].forEach((id) =>
+['cookieAccept', 'cookieEssential'].forEach((id) =>
 	document
 		.querySelector(`#${id}`)
 		?.addEventListener('click', () => banner?.classList.remove('show')),
