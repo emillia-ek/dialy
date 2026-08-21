@@ -1,17 +1,22 @@
 ---
-
+import LandingLayout from '../layouts/LandingLayout.astro';
+import Header from '../components/landing/Header.astro';
+import Hero from '../components/landing/Hero.astro';
+import Intro from '../components/landing/Intro.astro';
+import Features from '../components/landing/Features.astro';
+import Marquee from '../components/landing/Marquee.astro';
+import Mission from '../components/landing/Mission.astro';
+import HowItWorks from '../components/landing/HowItWorks.astro';
+import Partners from '../components/landing/Partners.astro';
+import Faq from '../components/landing/Faq.astro';
+import FinalCta from '../components/landing/FinalCta.astro';
+import Footer from '../components/landing/Footer.astro';
+import CookieBanner from '../components/landing/CookieBanner.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<LandingLayout title="Dianovo">
+	<Header /><main>
+		<Hero /><Intro /><Features /><Marquee /><Mission /><HowItWorks /><Partners
+		/><Faq /><FinalCta />
+	</main><Footer /><CookieBanner />
+</LandingLayout>

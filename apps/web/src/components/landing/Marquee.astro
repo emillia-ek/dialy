@@ -1,0 +1,15 @@
+---
+const phrases = [
+	'Z troską o codzienność',
+	'Prościej każdego dnia',
+	'Więcej jasności w danych',
+	'W Twoim własnym rytmie',
+	'Projektowane z uważnością',
+	'Bez zbędnego hałasu',
+];
+const items = [...phrases, ...phrases];
+---
+
+<div class="marquee-band" aria-hidden="true">
+	<div class="marquee-track">{items.map((item) => <span>{item}</span>)}</div>
+</div>

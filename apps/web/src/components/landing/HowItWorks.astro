@@ -1,0 +1,41 @@
+---
+const steps = [
+	[
+		'01',
+		'Zapisuj to, co ważne',
+		'Dodaj odczyt glukozy lub posiłek w sposób, który jest dla Ciebie wygodny.',
+	],
+	[
+		'02',
+		'Zobacz swoje trendy',
+		'Przeglądaj dane w spokojnym, czytelnym widoku i dostrzegaj własne wzorce.',
+	],
+	[
+		'03',
+		'Podejmuj świadome decyzje',
+		'Wykorzystuj obserwacje jako wsparcie w rozmowach z zespołem medycznym.',
+	],
+];
+---
+
+<section class="how" id="how">
+	<div class="wrap">
+		<div class="how-head reveal">
+			<span class="eyebrow">Jak działa</span><h2>
+				Trzy proste kroki, Twój własny rytm
+			</h2>
+		</div><div class="how-flow reveal">
+			{
+				steps.map(([number, title, description]) => (
+					<article class="how-step">
+						<>
+							<div class="step-num">{number}</div>
+							<h3>{title}</h3>
+							<p>{description}</p>
+						</>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

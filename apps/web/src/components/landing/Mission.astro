@@ -1,0 +1,72 @@
+---
+const tabs = [
+	{
+		id: 'story',
+		label: 'Nasza historia',
+		eyebrow: 'Od pierwszego pomysłu',
+		title:
+			'Zaczęło się od codziennych pytań, na które trudno znaleźć prostą odpowiedź',
+		body: 'Dianovo powstało jako szkolny projekt przyjaciół z różnych środowisk. Chcieliśmy stworzyć spokojniejsze miejsce do obserwowania własnych danych — bez przeładowania i bez udawania, że aplikacja zna wszystkie odpowiedzi.',
+	},
+	{
+		id: 'team',
+		label: 'Nasz zespół',
+		eyebrow: 'Różne perspektywy, wspólny cel',
+		title:
+			'Łączymy technologię, projektowanie i doświadczenia osób żyjących z T1D',
+		body: 'Jesteśmy uczniowskim zespołem uczącym się technologii i projektowania. Słuchamy osób, których dotyczy T1D, aby rozwijać Dianovo odpowiedzialnie i w oparciu o prawdziwe potrzeby.',
+	},
+	{
+		id: 'values',
+		label: 'Nasze zasady',
+		eyebrow: 'Nasze priorytety',
+		title: 'Jasność, uczciwość i szacunek dla decyzji użytkownika',
+		body: 'Dianovo ma wspierać rozumienie danych, a nie zastępować lekarza, opiekuna ani własnego osądu. Mówimy wprost, co aplikacja pokazuje, a czego nie może stwierdzić.',
+	},
+];
+---
+
+<section class="mission">
+	<div class="wrap">
+		<div class="mission-head reveal">
+			<span class="eyebrow">Kim jesteśmy</span><h2>
+				Zespół, który tworzy razem z osobami żyjącymi z T1D
+			</h2><div class="tabs" role="tablist">
+				{
+					tabs.map((tab, index) => (
+						<button
+							class:list={['tab-btn', { active: index === 0 }]}
+							data-tab={tab.id}
+							role="tab"
+							aria-selected={index === 0}
+						>
+							{tab.label}
+						</button>
+					))
+				}
+			</div>
+		</div>{
+			tabs.map((tab, index) => (
+				<div
+					class:list={['tab-panel', 'reveal', { active: index === 0 }]}
+					id={`tab-${tab.id}`}
+					role="tabpanel"
+				>
+					<>
+						<div class="tab-panel-text">
+							<>
+								<span class="eyebrow">{tab.eyebrow}</span>
+								<h3>{tab.title}</h3>
+								<p>{tab.body}</p>
+							</>
+						</div>
+						<div
+							class:list={['tab-panel-visual', `visual-${tab.id}`]}
+							aria-hidden="true"
+						/>
+					</>
+				</div>
+			))
+		}
+	</div>
+</section>

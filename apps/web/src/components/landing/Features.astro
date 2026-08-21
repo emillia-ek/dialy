@@ -1,0 +1,70 @@
+---
+import FeatureIcon from './FeatureIcon.astro';
+
+const features = [
+	[
+		'01',
+		'Trendy glukozy w prostym widoku',
+		'Zobacz swoje odczyty i ich zmiany na czytelnym wykresie. Dianovo pomaga zauważać wzorce w codziennych danych.',
+		'chart',
+	],
+	[
+		'02',
+		'Zapisywanie posiłków',
+		'Notuj posiłki w jednym miejscu, aby łatwiej łączyć je z własnymi obserwacjami i odczytami glukozy.',
+		'list',
+	],
+	[
+		'03',
+		'Przypomnienia w Twoim rytmie',
+		'Przypomnienia wtedy, kiedy naprawdę ich potrzebujesz — bez zasypywania powiadomieniami.',
+		'bell',
+	],
+	[
+		'04',
+		'Słownik bez trudnych słów',
+		'Krótkie i przystępne wyjaśnienia pojęć związanych z cukrzycą.',
+		'book',
+	],
+	[
+		'05',
+		'Historia i obserwacje',
+		'Wracaj do swoich danych i zauważaj, co w codziennym rytmie ma dla Ciebie znaczenie.',
+		'bars',
+	],
+];
+---
+
+<section class="features" id="features">
+	<div class="wrap">
+		<div class="features-head reveal">
+			<div>
+				<span class="eyebrow">Co oferuje Dianovo</span><h2>
+					Więcej jasności na co dzień
+				</h2><p>
+					Narzędzia zaprojektowane wokół codziennych potrzeb osób z cukrzycą
+					typu 1.
+				</p>
+			</div><div class="carousel-nav">
+				<button class="cnav-btn" id="carPrev" aria-label="Poprzednie funkcje"
+					>←</button
+				><button class="cnav-btn" id="carNext" aria-label="Następne funkcje"
+					>→</button
+				>
+			</div>
+		</div><div class="fcarousel reveal" id="fcarousel">
+			{
+				features.map(([number, title, description, icon]) => (
+					<article class="fcard">
+						<>
+							<div class="fnum">{number}</div>
+							<FeatureIcon name={icon} />
+							<h3>{title}</h3>
+							<p>{description}</p>
+						</>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>

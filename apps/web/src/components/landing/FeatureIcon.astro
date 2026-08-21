@@ -1,0 +1,47 @@
+---
+type IconName = 'chart' | 'list' | 'bell' | 'book' | 'bars';
+interface Props {
+	name: IconName;
+}
+const { name } = Astro.props;
+---
+
+<svg class="ficon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+	{
+		name === 'chart' && (
+			<>
+				<path d="M6 31h28M8 27l7-8 6 5 11-13" />
+				<circle cx="32" cy="11" r="2" fill="currentColor" />
+			</>
+		)
+	}
+	{
+		name === 'list' && (
+			<>
+				<path d="M8 7h24v26H8zM13 14h14M13 20h14M13 26h9" />
+				<circle cx="11" cy="14" r=".7" fill="currentColor" />
+			</>
+		)
+	}
+	{
+		name === 'bell' && (
+			<>
+				<path d="M10 27h20l-3-5v-7a7 7 0 0 0-14 0v7zM17 31h6" />
+			</>
+		)
+	}
+	{
+		name === 'book' && (
+			<>
+				<path d="M7 8h11a4 4 0 0 1 4 4v19a4 4 0 0 0-4-4H7zM33 8H22v19a4 4 0 0 1 4-4h7z" />
+			</>
+		)
+	}
+	{
+		name === 'bars' && (
+			<>
+				<path d="M7 32V20M15 32V9M23 32V16M31 32V5M5 32h28" />
+			</>
+		)
+	}
+</svg>

@@ -1,0 +1,37 @@
+---
+const audiences = [
+	[
+		'Osoby z T1D',
+		'Dla tych, którzy chcą spokojniej obserwować własne dane i codzienne nawyki.',
+	],
+	[
+		'Rodzice i bliscy',
+		'Dla osób wspierających, które chcą lepiej rozumieć rytm dnia z cukrzycą.',
+	],
+	[
+		'Zespół medyczny',
+		'Jako uzupełnienie rozmowy o obserwacjach — nigdy jako zastępstwo porady medycznej.',
+	],
+];
+---
+
+<section class="partners" id="audience">
+	<div class="wrap">
+		<div class="partners-head reveal">
+			<span class="eyebrow">Dla kogo</span><h2>
+				Dianovo powstaje wokół codziennych potrzeb
+			</h2>
+		</div><div class="audience-row reveal">
+			{
+				audiences.map(([title, description]) => (
+					<article class="audience-card">
+						<>
+							<h3>{title}</h3>
+							<p>{description}</p>
+						</>
+					</article>
+				))
+			}
+		</div>
+	</div>
+</section>
