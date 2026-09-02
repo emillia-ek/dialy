@@ -14,11 +14,12 @@ const { title } = Astro.props;
 			content="width=device-width, initial-scale=1"
 		/><meta
 			name="description"
-			content="Dianovo helps make everyday life with Type 1 diabetes clearer and calmer."
-		/><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
+			content="Dialy helps make everyday life with Type 1 diabetes clearer and calmer."
 		/><link
+			rel="icon"
+			type="image/svg+xml"
+			href={`${import.meta.env.BASE_URL}/favicon.svg`}
+		/><link rel="preconnect" href="https://fonts.googleapis.com" /><link
 			rel="preconnect"
 			href="https://fonts.gstatic.com"
 			crossorigin="anonymous"

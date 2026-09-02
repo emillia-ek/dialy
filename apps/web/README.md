@@ -1,6 +1,6 @@
-# Strona Dianovo
+# Strona Dialy
 
-Landing page projektu Dianovo zbudowany w [Astro](https://astro.build/).
+Landing page projektu Dialy zbudowany w [Astro](https://astro.build/).
 
 ## Wymagania
 
