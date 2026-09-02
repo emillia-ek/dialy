@@ -1,3 +1,5 @@
+…………………
+
 # Strona Dianovo
 
 Landing page projektu Dianovo zbudowany w [Astro](https://astro.build/).
