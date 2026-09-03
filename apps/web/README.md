@@ -1,3 +1,4 @@
+.........
 # Strona Dialy
 
 Landing page projektu Dialy zbudowany w [Astro](https://astro.build/).
