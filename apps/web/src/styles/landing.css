@@ -692,9 +692,11 @@ button:focus-visible {
 }
 .patronage-card {
 	padding: 34px 38px;
+	border-bottom: 1px solid var(--line);
 }
 .patronage-card + .patronage-card {
 	border-left: 1px solid var(--line);
+	border-bottom: 1px solid var(--line);
 }
 .patronage-card h3 {
 	font-size: 25px;
