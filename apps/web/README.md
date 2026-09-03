@@ -59,3 +59,4 @@ src/
 ├── scripts/            # Interakcje po stronie przeglądarki
 └── styles/             # Globalne style strony
 ```
+## .
