@@ -1,0 +1,226 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+import Header from '../components/landing/Header.astro';
+import Footer from '../components/landing/Footer.astro';
+---
+
+<LandingLayout title="Polityka prywatności — Dialy">
+	<Header /><main>
+		<section class="privacy-hero">
+			<div class="wrap">
+				<span class="eyebrow reveal">Dokumenty prawne</span>
+				<h1 class="reveal">Polityka prywatności</h1>
+				<p class="privacy-lede reveal">
+					Dbamy o Twoje dane z taką samą troską, z jaką podchodzimy do Twojego
+					zdrowia. Poniżej znajdziesz wszystkie informacje o tym, jak zbieramy,
+					przechowujemy i chronimy Twoje dane osobowe.
+				</p>
+				<p class="privacy-meta reveal">
+					Ostatnia aktualizacja: <time datetime="2026-09-16">16 września 2026</time>
+				</p>
+			</div>
+		</section>
+
+		<section class="privacy-body">
+			<div class="wrap privacy-wrap">
+				<aside class="privacy-toc reveal">
+					<p class="toc-label">Spis treści</p>
+					<nav aria-label="Spis treści polityki prywatności">
+						<a href="#section-1">1. Administrator danych</a>
+						<a href="#section-2">2. Zakres zbieranych danych</a>
+						<a href="#section-3">3. Cel przetwarzania</a>
+						<a href="#section-4">4. Podstawa prawna</a>
+						<a href="#section-5">5. Okres przechowywania</a>
+						<a href="#section-6">6. Twoje prawa</a>
+						<a href="#section-7">7. Pliki cookie</a>
+						<a href="#section-8">8. Kontakt</a>
+					</nav>
+				</aside>
+
+				<div class="privacy-content">
+					<div class="privacy-placeholder reveal" id="section-1">
+						<div class="placeholder-icon">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<circle cx="12" cy="12" r="10"></circle>
+								<line x1="12" y1="8" x2="12" y2="12"></line>
+								<line x1="12" y1="16" x2="12.01" y2="16"></line>
+							</svg>
+						</div>
+						<h2>Treść polityki wkrótce</h2>
+						<p>
+							Dokument polityki prywatności jest w trakcie przygotowania. Pracujemy
+							nad&nbsp;nim z należytą starannością, aby był przejrzysty, zrozumiały
+							i&nbsp;zgodny z obowiązującymi przepisami prawa (RODO).
+						</p>
+						<p>
+							W razie pytań dotyczących ochrony danych osobowych możesz napisać do
+							nas na adres&nbsp;<a href="mailto:dianovo.app@gmail.com"
+								>dianovo.app@gmail.com</a
+							>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main><Footer />
+</LandingLayout>
+
+<style>
+	.privacy-hero {
+		padding: 120px 0 80px;
+		background: radial-gradient(
+				60% 60% at 80% 20%,
+				var(--blue-100),
+				transparent 60%
+			),
+			radial-gradient(50% 55% at 10% 90%, var(--blue-50), transparent 60%),
+			linear-gradient(160deg, #f3f0e9, var(--cream) 40%, var(--blue-50));
+		border-bottom: 1px solid var(--line);
+	}
+
+	.privacy-hero h1 {
+		font-size: clamp(36px, 5vw, 66px);
+		font-weight: 400;
+		margin: 18px 0 24px;
+	}
+
+	.privacy-lede {
+		font-size: 18px;
+		max-width: 600px;
+		line-height: 1.75;
+		margin-bottom: 28px;
+	}
+
+	.privacy-meta {
+		font-size: 13.5px;
+		color: var(--steel-700);
+		letter-spacing: 0.04em;
+	}
+
+	.privacy-body {
+		padding: 100px 0 140px;
+	}
+
+	.privacy-wrap {
+		display: grid;
+		grid-template-columns: 240px 1fr;
+		gap: 80px;
+		align-items: start;
+	}
+
+	/* Table of contents */
+	.privacy-toc {
+		position: sticky;
+		top: 100px;
+	}
+
+	.toc-label {
+		font-size: 11.5px;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		color: var(--steel-700);
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.privacy-toc nav {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.privacy-toc a {
+		font-size: 14px;
+		color: var(--ink-700);
+		opacity: 0.55;
+		transition: opacity 0.25s;
+		line-height: 1.45;
+	}
+
+	.privacy-toc a:hover {
+		opacity: 1;
+	}
+
+	/* Placeholder */
+	.privacy-content {
+		min-height: 400px;
+	}
+
+	.privacy-placeholder {
+		border: 1px solid var(--line);
+		background: var(--blue-50);
+		padding: 64px 60px;
+		text-align: center;
+		max-width: 680px;
+	}
+
+	.placeholder-icon {
+		width: 52px;
+		height: 52px;
+		margin: 0 auto 28px;
+		color: var(--steel-500);
+	}
+
+	.placeholder-icon svg {
+		width: 100%;
+		height: 100%;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 1.4;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+	.privacy-placeholder h2 {
+		font-size: 28px;
+		margin-bottom: 18px;
+	}
+
+	.privacy-placeholder p {
+		font-size: 15.5px;
+		line-height: 1.75;
+		max-width: 480px;
+		margin: 0 auto 14px;
+	}
+
+	.privacy-placeholder p:last-child {
+		margin-bottom: 0;
+	}
+
+	.privacy-placeholder a {
+		color: var(--steel-700);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
+	@media (max-width: 900px) {
+		.privacy-wrap {
+			grid-template-columns: 1fr;
+			gap: 48px;
+		}
+
+		.privacy-toc {
+			position: static;
+		}
+
+		.privacy-toc nav {
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px 24px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.privacy-hero {
+			padding: 90px 0 60px;
+		}
+
+		.privacy-body {
+			padding: 70px 0 100px;
+		}
+
+		.privacy-placeholder {
+			padding: 40px 28px;
+		}
+	}
+</style>
