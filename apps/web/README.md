@@ -1,6 +1,6 @@
 # Strona Dialy
 
-Landing page projektu Dialy zbudowany w [Astro](https://astro.build/). Wejdź na <a href="dialyapp.pl" target="_blank">dialyapp.pl</a>, aby zobaczyć stronę na żywo :)
+Landing page projektu Dialy zbudowany w [Astro](https://astro.build/). Wejdź na <u>dialyapp.pl</u>, aby zobaczyć stronę na żywo :)
 
 ## Wymagania
 
