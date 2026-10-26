@@ -60,6 +60,5 @@ src/
 └── styles/             # Globalne style strony
 ```
 ## Zrzuty ekranu
-<img width="1470" height="808" alt="Zrzut ekranu 2026-10-26 o 08 34 16 1" src="https://github.com/user-attachments/assets/6d8dfe47-5dae-4d56-97c0-ff9a79c6f1ed" />
 <img width="1470" height="808" alt="Zrzut ekranu 2026-10-26 o 08 33 32" src="https://github.com/user-attachments/assets/b0393dd3-d27e-4607-b540-c92007f163d8" />
-
+<img width="1470" height="808" alt="Zrzut ekranu 2026-10-26 o 08 34 16 1" src="https://github.com/user-attachments/assets/6d8dfe47-5dae-4d56-97c0-ff9a79c6f1ed" />
