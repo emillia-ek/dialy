@@ -32,7 +32,7 @@
 ⠀⠀⠀⠘⠿⠶⢶⢧⣦⣦⡴⢾⣥⣽⣤⣤⣤⣤⣤⣤⡴⣯⡤⠴⠶⠛⠋⠀⠀⠀
 </pre>
 
-**Prace w toku**
+**Projekt aplikacji mobilnej wspierajej zarządzanie cukrzycą typu 1: analizuje posiłki z pomocą AI i szacuje trendy glikemii - prace w toku**
 
 </div>
 
