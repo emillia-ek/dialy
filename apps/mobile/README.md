@@ -1,3 +1,7 @@
+## Prace w toku...
+
+<img width="2408" height="835" alt="IMG_5703" src="https://github.com/user-attachments/assets/fe973883-e0de-4b7d-9b68-c15cd6120e1c" />
+
 ## Interfejs
 <img width="274" height="456" alt="dianovo1" src="https://github.com/user-attachments/assets/a67dc02b-ab18-4fff-9a34-f650769437d2" />
 <img width="380" height="680" alt="dianovo2" src="https://github.com/user-attachments/assets/0638d3db-477e-466d-8594-240f21575593" />
